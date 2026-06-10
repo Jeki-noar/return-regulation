@@ -53,8 +53,8 @@ const STEPS = {
     id: "dayCheck", type: "decision",
     title: "Days since delivery?",
     subtitle: "Count from delivery date",
-    yes: { label: "≤ 1 days", next: "logisticsCheck" },
-    no:  { label: "> 1 days", next: "productCheck" },
+    yes: { label: "≤ 3 days", next: "logisticsCheck" },
+    no:  { label: "> 3 days", next: "productCheck" },
   },
   productCheck: {
     id: "productCheck", type: "decision",
@@ -72,7 +72,7 @@ const STEPS = {
   rejected: {
     id: "rejected", type: "end", color: "red",
     title: "Return Rejected",
-    subtitle: "Non-Indomie products not eligible after 1 days",
+    subtitle: "Non-Indomie products not eligible after 3 days",
   },
   logisticsCheck: {
     id: "logisticsCheck", type: "decision",
@@ -104,7 +104,7 @@ const STEPS = {
   processed: {
     id: "processed", type: "end", color: "green",
     title: "Return Processed",
-    subtitle: "Logistics handles pickup or product swap from new order customer",
+    subtitle: "Logistics handles pickup or product swap",
   },
 };
 
@@ -546,7 +546,7 @@ export default function ReturnRegulationApp() {
           Approval levels
         </div>
         {[
-          { color: COLOR_MAP.blue,   label: "L1 Admin/Sales",     desc: "Submit via bit.ly/Pengajuankendal" },
+          { color: COLOR_MAP.blue,   label: "L1 Admin",     desc: "Submit via bit.ly/Pengajuankendal" },
           { color: COLOR_MAP.indigo, label: "L2 Sales Lead", desc: "Nurwahid · Wilona · Fajar Sidiq" },
           { color: COLOR_MAP.purple, label: "L3 Ops Lead",   desc: "Stainly" },
           { color: COLOR_MAP.rose,   label: "L4 BI",         desc: "Jeki — only if return exceeds requirements" },
@@ -559,6 +559,46 @@ export default function ReturnRegulationApp() {
             </div>
           </div>
         ))}
+
+        {/* Divider */}
+        <div style={{ borderTop: "1px solid #E5E7EB", margin: "12px 0" }} />
+
+        {/* Note section */}
+        <div style={{
+          background: "#FFFBEB",
+          border: "1px solid #FCD34D",
+          borderLeft: "4px solid #F59E0B",
+          borderRadius: 8,
+          padding: "12px 14px",
+        }}>
+          <div style={{
+            display: "flex", alignItems: "center", gap: 6,
+            marginBottom: 8,
+          }}>
+            <span style={{ fontSize: 14 }}>📋</span>
+            <span style={{ fontSize: 11, fontWeight: 700, color: "#92400E", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              Important Note
+            </span>
+          </div>
+
+          {/* Note item 1 */}
+          <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
+            <span style={{ fontSize: 12, color: "#D97706", flexShrink: 0, marginTop: 1 }}>①</span>
+            <p style={{ margin: 0, fontSize: 12, color: "#78350F", lineHeight: 1.6 }}>
+              Return service may process a maximum of <strong>3 days</strong>. If the customer does not make a new purchase, the sales representative must collect the items the customer wishes to return and send them directly back to the warehouse.
+            </p>
+          </div>
+
+          {/* Note item 2 */}
+          <div style={{ display: "flex", gap: 8 }}>
+            <span style={{ fontSize: 12, color: "#D97706", flexShrink: 0, marginTop: 1 }}>②</span>
+            <p style={{ margin: 0, fontSize: 12, color: "#78350F", lineHeight: 1.6 }}>
+              All information is available in the Google Chat channel titled{" "}
+              <strong style={{ color: "#92400E" }}>"Escalation Issue"</strong>,
+              including approval and issue resolution.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
