@@ -72,7 +72,7 @@ const STEPS = {
   rejected: {
     id: "rejected", type: "end", color: "red",
     title: "Return Rejected",
-    subtitle: "Non-Indomie products not eligible after 3 days",
+    subtitle: "Non-Indomie products not eligible after 1 days",
   },
   logisticsCheck: {
     id: "logisticsCheck", type: "decision",
@@ -104,7 +104,7 @@ const STEPS = {
   processed: {
     id: "processed", type: "end", color: "green",
     title: "Return Processed",
-    subtitle: "Logistics handles pickup or product swap",
+    subtitle: "Logistics handles pickup or product swap from new order customer",
   },
 };
 
