@@ -355,7 +355,7 @@ function Breadcrumb({ history, onJump }) {
 // Approval level tracker sidebar
 function ApprovalLevels({ history }) {
   const levels = [
-    { id: "submit",       label: "L1 Admin",      color: COLOR_MAP.blue },
+    { id: "submit",       label: "L1 Sales/Admin",      color: COLOR_MAP.blue },
     { id: "approvalSales",label: "L2 Sales Lead",  color: COLOR_MAP.indigo },
     { id: "approvalOps",  label: "L3 Ops Lead",    color: COLOR_MAP.purple },
     { id: "approvalBI",   label: "L4 BI",          color: COLOR_MAP.rose },
