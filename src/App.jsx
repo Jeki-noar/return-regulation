@@ -53,8 +53,8 @@ const STEPS = {
     id: "dayCheck", type: "decision",
     title: "Days since delivery?",
     subtitle: "Count from delivery date",
-    yes: { label: "≤ 3 days", next: "logisticsCheck" },
-    no:  { label: "> 3 days", next: "productCheck" },
+    yes: { label: "≤ 1 days", next: "logisticsCheck" },
+    no:  { label: "> 1 days", next: "productCheck" },
   },
   productCheck: {
     id: "productCheck", type: "decision",
@@ -72,7 +72,7 @@ const STEPS = {
   rejected: {
     id: "rejected", type: "end", color: "red",
     title: "Return Rejected",
-    subtitle: "Non-Indomie products not eligible after 3 days",
+    subtitle: "Non-Indomie products not eligible after 1 days",
   },
   logisticsCheck: {
     id: "logisticsCheck", type: "decision",
