@@ -28,7 +28,7 @@ const STEPS = {
     color: "blue",
     title: "Level 1 — Admin Request",
     subtitle: "Admin fills & submits the regulation form",
-    link: "https://bit.ly/Pengajuankendal",
+    link: "https://bit.ly/Pengajuankendala",
     approvers: [],
     role: "Admin",
     next: "approvalSales",
