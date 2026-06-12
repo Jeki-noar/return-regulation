@@ -20,14 +20,14 @@ const STEPS = {
   start: {
     id: "start", type: "start",
     title: "Return Request",
-    subtitle: "Admin submits a return request",
+    subtitle: "Sales/Admin submits a return request",
     next: "submit",
   },
   submit: {
     id: "submit", type: "approval",
     color: "blue",
-    title: "Level 1 — Admin Request",
-    subtitle: "Admin fills & submits the regulation form",
+    title: "Level 1 — Sales/Admin Request",
+    subtitle: "Sales/Admin fills & submits the regulation form",
     link: "https://bit.ly/Pengajuankendala",
     approvers: [],
     role: "Admin",
