@@ -546,7 +546,7 @@ export default function ReturnRegulationApp() {
           Approval levels
         </div>
         {[
-          { color: COLOR_MAP.blue,   label: "L1 Sales/Admin",     desc: "Submit via bit.ly/Pengajuankendala" },
+          { color: COLOR_MAP.blue,   label: "L1 Admin",     desc:  "Admin will follow up on the request" },
           { color: COLOR_MAP.indigo, label: "L2 Sales Lead", desc: "Nurwahid · Wilona · Fajar Sidiq" },
           { color: COLOR_MAP.purple, label: "L3 Ops Lead",   desc: "Stainly" },
           { color: COLOR_MAP.rose,   label: "L4 BI",         desc: "Jeki — only if return exceeds requirements" },
