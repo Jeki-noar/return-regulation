@@ -53,8 +53,8 @@ const STEPS = {
     id: "dayCheck", type: "decision",
     title: "Days since delivery?",
     subtitle: "Count from delivery date",
-    yes: { label: "≤ 1 days", next: "logisticsCheck" },
-    no:  { label: "> 1 days", next: "productCheck" },
+    yes: { label: "≤ +1 days", next: "logisticsCheck" },
+    no:  { label: "> +1 days", next: "productCheck" },
   },
   productCheck: {
     id: "productCheck", type: "decision",
