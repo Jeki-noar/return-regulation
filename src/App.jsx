@@ -3,9 +3,9 @@ import { useState } from "react";
 // ─── APPROVAL CONFIG ────────────────────────────────────────────────────────
 const APPROVERS = {
   salesLeads: [
-    { name: "Nurwahid",    role: "Sales Lead",  avatar: "NW" },
-    { name: "Wilona",      role: "Sales Lead",  avatar: "WL" },
-    { name: "Fajar Sidiq", role: "Sales Lead",  avatar: "FS" },
+    { name: "Nurwahid",    role: "FMCG/PRINCIPLE(KOPI KENANGAN, MAMASUKA)",  avatar: "NW" },
+    { name: "Wilona",      role: "PRINCIPLE(BELFOOD)",  avatar: "WL" },
+    { name: "Fajar Sidiq", role: "FRESH",  avatar: "FS" },
   ],
   opsLeads: [
     { name: "Stainly", role: "Ops Lead", avatar: "ST" },
