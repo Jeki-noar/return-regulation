@@ -3,7 +3,7 @@ import { useState } from "react";
 // ─── APPROVAL CONFIG ────────────────────────────────────────────────────────
 const APPROVERS = {
   salesLeads: [
-    { name: "Nurwahid",    role: "FMCG/PRINCIPLE(KOPI KENANGAN, MAMASUKA)",  avatar: "NW" },
+    { name: "Adi Swandaru",    role: "FMCG/PRINCIPLE(KOPI KENANGAN, MAMASUKA)",  avatar: "NW" },
     { name: "Wilona",      role: "PRINCIPLE(BELFOOD)",  avatar: "WL" },
     { name: "Fajar Sidiq", role: "FRESH",  avatar: "FS" },
   ],
@@ -547,7 +547,7 @@ export default function ReturnRegulationApp() {
         </div>
         {[
           { color: COLOR_MAP.blue,   label: "L1 Admin",     desc:  "Admin will follow up on the request" },
-          { color: COLOR_MAP.indigo, label: "L2 Sales Lead", desc: "Nurwahid · Wilona · Fajar Sidiq" },
+          { color: COLOR_MAP.indigo, label: "L2 Sales Lead", desc: "Adi Swandaru· Wilona · Fajar Sidiq" },
           { color: COLOR_MAP.purple, label: "L3 Ops Lead",   desc: "Stainly" },
           { color: COLOR_MAP.rose,   label: "L4 BOD",         desc: "Ricky — only if return exceeds requirements" },
         ].map((r, i) => (
