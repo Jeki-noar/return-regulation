@@ -358,7 +358,7 @@ function ApprovalLevels({ history }) {
     { id: "submit",       label: "L1 Sales/Admin",      color: COLOR_MAP.blue },
     { id: "approvalSales",label: "L2 Sales Lead",  color: COLOR_MAP.indigo },
     { id: "approvalOps",  label: "L3 Ops Lead",    color: COLOR_MAP.purple },
-    { id: "approvalBI",   label: "L4 BI",          color: COLOR_MAP.rose },
+    { id: "approvalBI",   label: "L4 BOD",          color: COLOR_MAP.rose },
   ];
   return (
     <div style={{
@@ -549,7 +549,7 @@ export default function ReturnRegulationApp() {
           { color: COLOR_MAP.blue,   label: "L1 Admin",     desc:  "Admin will follow up on the request" },
           { color: COLOR_MAP.indigo, label: "L2 Sales Lead", desc: "Nurwahid · Wilona · Fajar Sidiq" },
           { color: COLOR_MAP.purple, label: "L3 Ops Lead",   desc: "Stainly" },
-          { color: COLOR_MAP.rose,   label: "L4 BI",         desc: "Ricky — only if return exceeds requirements" },
+          { color: COLOR_MAP.rose,   label: "L4 BOD",         desc: "Ricky — only if return exceeds requirements" },
         ].map((r, i) => (
           <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 7 }}>
             <div style={{ width: 7, height: 7, borderRadius: "50%", background: r.color.sub, marginTop: 4, flexShrink: 0 }}/>
